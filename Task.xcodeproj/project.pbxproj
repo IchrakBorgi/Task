@@ -21,6 +21,10 @@
 		C8DB295C1862FD42008EE86A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DB293E1862FD42008EE86A /* UIKit.framework */; };
 		C8DB29641862FD42008EE86A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8DB29621862FD42008EE86A /* InfoPlist.strings */; };
 		C8DB29661862FD42008EE86A /* TaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DB29651862FD42008EE86A /* TaskTests.m */; };
+		C8DB29731862FD69008EE86A /* ListTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DB29711862FD69008EE86A /* ListTaskViewController.m */; };
+		C8DB29741862FD69008EE86A /* ListTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB29721862FD69008EE86A /* ListTaskViewController.xib */; };
+		C8DB29791862FD8E008EE86A /* NewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8DB29771862FD8E008EE86A /* NewTaskViewController.m */; };
+		C8DB297A1862FD8E008EE86A /* NewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8DB29781862FD8E008EE86A /* NewTaskViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		C8DB29611862FD42008EE86A /* TaskTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TaskTests-Info.plist"; sourceTree = "<group>"; };
 		C8DB29631862FD42008EE86A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8DB29651862FD42008EE86A /* TaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTests.m; sourceTree = "<group>"; };
+		C8DB29701862FD69008EE86A /* ListTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTaskViewController.h; sourceTree = "<group>"; };
+		C8DB29711862FD69008EE86A /* ListTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTaskViewController.m; sourceTree = "<group>"; };
+		C8DB29721862FD69008EE86A /* ListTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTaskViewController.xib; sourceTree = "<group>"; };
+		C8DB29761862FD8E008EE86A /* NewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTaskViewController.h; sourceTree = "<group>"; };
+		C8DB29771862FD8E008EE86A /* NewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTaskViewController.m; sourceTree = "<group>"; };
+		C8DB29781862FD8E008EE86A /* NewTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTaskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +122,8 @@
 		C8DB29401862FD42008EE86A /* Task */ = {
 			isa = PBXGroup;
 			children = (
+				C8DB29751862FD6F008EE86A /* NewTaskViewController */,
+				C8DB296F1862FD4B008EE86A /* ListTaskViewController */,
 				C8DB29491862FD42008EE86A /* AppDelegate.h */,
 				C8DB294A1862FD42008EE86A /* AppDelegate.m */,
 				C8DB294C1862FD42008EE86A /* Main.storyboard */,
@@ -150,6 +162,26 @@
 				C8DB29621862FD42008EE86A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8DB296F1862FD4B008EE86A /* ListTaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB29701862FD69008EE86A /* ListTaskViewController.h */,
+				C8DB29711862FD69008EE86A /* ListTaskViewController.m */,
+				C8DB29721862FD69008EE86A /* ListTaskViewController.xib */,
+			);
+			name = ListTaskViewController;
+			sourceTree = "<group>";
+		};
+		C8DB29751862FD6F008EE86A /* NewTaskViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB29761862FD8E008EE86A /* NewTaskViewController.h */,
+				C8DB29771862FD8E008EE86A /* NewTaskViewController.m */,
+				C8DB29781862FD8E008EE86A /* NewTaskViewController.xib */,
+			);
+			name = NewTaskViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +261,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DB29531862FD42008EE86A /* Images.xcassets in Resources */,
+				C8DB29741862FD69008EE86A /* ListTaskViewController.xib in Resources */,
 				C8DB29451862FD42008EE86A /* InfoPlist.strings in Resources */,
 				C8DB294E1862FD42008EE86A /* Main.storyboard in Resources */,
+				C8DB297A1862FD8E008EE86A /* NewTaskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8DB29511862FD42008EE86A /* ViewController.m in Sources */,
+				C8DB29731862FD69008EE86A /* ListTaskViewController.m in Sources */,
+				C8DB29791862FD8E008EE86A /* NewTaskViewController.m in Sources */,
 				C8DB294B1862FD42008EE86A /* AppDelegate.m in Sources */,
 				C8DB29471862FD42008EE86A /* main.m in Sources */,
 			);

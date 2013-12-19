@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class  ListTaskViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) ListTaskViewController *viewController;
 @end
